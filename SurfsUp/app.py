@@ -131,8 +131,8 @@ def TOBS():
     # Return a list of jsonified precipitation data for the previous 12 months 
     return jsonify(USC00519281_list)
 
-#Specified start, calculates MIN, AVG, and MAX for all the dates greater than or equal to the start date.
-#Start date is dynamic input entered by user.
+#With a specified start date, we will calculate MIN, MAX, and AVG, for all stations, for dates greater than or equal to the start date.
+#<Configdate> is dynamic input entered by user.
 
 @app.route("/api/v1.0/date/<configdate>")
 def get_start(configdate):
@@ -161,8 +161,8 @@ def get_age(start_date, end_date):
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
-    """Return a list of passenger data between an age range"""
-    # Query all passengers by gender
+    
+    #Return MIN, MAX, and AVG Temperatures (tobs) for all stations, BETWEEN dates entered by user.
     results = session.query(func.min(Measurement.tobs), func.max(Measurement.tobs), func.avg(Measurement.tobs))\
         .filter(Measurement.date >= start_date)\
         .filter(Measurement.date <= end_date) \
