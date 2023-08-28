@@ -1,6 +1,6 @@
 # SurfsUP
 
-This exercie contains a climate analysis for locations in Hawaii using 2 different methodologies.
+This exercise contains a climate analysis for locations in Hawaii using 2 different methodologies.
 The data provided can be found in the Resources folder.
 
 The SurfsUp folder is divided into 2 sections:  
