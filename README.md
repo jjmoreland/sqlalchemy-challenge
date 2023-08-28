@@ -9,12 +9,12 @@ The SurfsUp folder is divided into 2 sections:
 
 # The flask application has 5 routes:
 1.) precipitation route:  
--  precipitation and dates for the past year
+-  precipitation and dates for the past year  
 2.) station route:  
--  all stations in the database (full data provided)
+-  all stations in the database (full data provided)  
 3.) TOBS route:  
--  data for the most active station for the past year (USC00519281)
+-  data for the most active station for the past year (USC00519281)  
 4.) Date:  
--  accepts a start date (YYYY-MM-DD) and returns MIN, MAX, and AVG temperature from the given start date
+-  accepts a start date (YYYY-MM-DD) and returns MIN, MAX, and AVG temperature from the given start date  
 5.) DateRange:  
--  accepts a start AND end date and returns MIN, MAX, and AVG temperature for the selected period
+-  accepts a start AND end date and returns MIN, MAX, and AVG temperature for the selected period  
