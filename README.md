@@ -10,6 +10,7 @@ The SurfsUp folder is divided into 2 sections:
 # The flask application has 5 routes:
 1.) precipitation route:  
 -  precipitation and dates for the past year  
+
 2.) station route:  
 -  all stations in the database (full data provided)  
 3.) TOBS route:  
